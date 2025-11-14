@@ -1,5 +1,5 @@
 import streamlit as st
-import mock_requests as requests
+import requests as requests
 st.write('Hi')
 def languageCapitals(language):
     alist = []
@@ -12,3 +12,4 @@ def languageCapitals(language):
             alist.append(variable[i]['capital'][0])
     return sorted(alist)
 st.write(languageCapitals('English'))
+
